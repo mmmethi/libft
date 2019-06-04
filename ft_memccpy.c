@@ -6,7 +6,7 @@
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 11:13:57 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/05/29 11:31:57 by mmmethi          ###   ########.fr       */
+/*   Updated: 2019/06/04 15:48:37 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	char *p;
-	size_t i;
+	char	*p;
+	size_t	i;
 
 	i = -1;
 	p = dst;

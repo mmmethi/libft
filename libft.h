@@ -6,15 +6,15 @@
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 13:00:23 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/06/04 11:36:08 by event            ###   ########.fr       */
+/*   Updated: 2019/06/04 15:13:06 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
-#include <string.h>
-#include <unistd.h>
-#include <stdlib.h>
+# define LIBFT_H
+# include <string.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
