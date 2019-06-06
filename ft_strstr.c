@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 11:17:21 by event             #+#    #+#             */
-/*   Updated: 2019/06/04 16:19:41 by mmmethi          ###   ########.fr       */
+/*   Updated: 2019/06/05 12:23:22 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ char	*ft_strstr(const char *haystack, const char *needle)
 	{
 		str1 = haystack;
 		str2 = needle;
-		while (*str2 != '\0' && *srt1 == *srt2)
+		while (*str2 != '\0' && *str1 == *str2)
 		{
 			str1++;
 			str2++;
 		}
 		if (*str2 == '\0')
 			return ((char*)haystack);
-		srt1++;
+		str1++;
 	}
 	return (NULL);
 }

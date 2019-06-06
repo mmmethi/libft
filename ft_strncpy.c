@@ -6,7 +6,7 @@
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 09:40:05 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/05/29 12:25:28 by mmmethi          ###   ########.fr       */
+/*   Updated: 2019/06/05 12:14:21 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 	if (dst == NULL || src == NULL)
 		return (NULL);
 	str = dst;
-	while (*scr != '\0' && len > 0)
+	while (*src != '\0' && len > 0)
 	{
 		*dst++ = *src++;
 		len--;
