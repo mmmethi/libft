@@ -6,7 +6,7 @@
 #    By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/05 11:17:55 by mmmethi           #+#    #+#              #
-#    Updated: 2019/06/05 11:46:25 by mmmethi          ###   ########.fr        #
+#    Updated: 2019/06/10 14:44:41 by mmmethi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,9 @@ SRCS = ft_memset.c \
 			ft_toupper.c \
 			ft_atoi.c \
 			ft_strlen.c \
-			ft_strcat.c \
+			ft_strlcat.c \
+			ft_memalloc.c \
+			ft_memdel.c \
 
 OBJCTS = ft_memset.o \
 	   		ft_bzero.o \
@@ -72,7 +74,9 @@ OBJCTS = ft_memset.o \
 			ft_toupper.o \
 			ft_atoi.o \
 			ft_strlen.o \
-			ft_strcat.o \
+			ft_strlcat.o \
+			ft_memalloc.o \
+			ft_memdel.o \
 
 RM = rm -f
 

@@ -6,7 +6,7 @@
 /*   By: event <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 11:17:21 by event             #+#    #+#             */
-/*   Updated: 2019/06/05 12:23:22 by mmmethi          ###   ########.fr       */
+/*   Updated: 2019/06/10 15:35:10 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,23 @@
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {
-	const char	*str1;
-	const char	*str2;
+	char		*str;
+	size_t		nee_len;
+	size_t		i;
+	size_t		k;
 
-	if (*needle == '\0')
-		return ((char*)haystack);
-	while (*haystack != '\0')
+	str = (char *)haystack;
+	if (!(nee_len = ft_strlen(needle)))
+		return (str);
+	i = 0;
+	while (str[i])
 	{
-		str1 = haystack;
-		str2 = needle;
-		while (*str2 != '\0' && *str1 == *str2)
-		{
-			str1++;
-			str2++;
-		}
-		if (*str2 == '\0')
-			return ((char*)haystack);
-		str1++;
+		k = 0;
+		while (needle[k] && needle[k] == str[i + k])
+			k++;
+		if (k == nee_len)
+			return (&str[i]);
+		i++;
 	}
 	return (NULL);
 }

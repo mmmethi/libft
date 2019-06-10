@@ -6,7 +6,7 @@
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/29 12:30:22 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/05/29 15:18:25 by mmmethi          ###   ########.fr       */
+/*   Updated: 2019/06/10 14:58:20 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,22 @@
 #include <stdio.h>
 #include <string.h>
 
-int main () 
+int main()
 {
-   char str1[15];
-   char str2[15];
-   int ret;
+    // Take any two strings
+    char s1[] = "GeeksforGeeks";
+    char s2[] = "for";
+    char* p;
 
-   ft_memcpy(str1, "abcdef", 6);
-   ft_memcpy(str2, "ABCDEF", 6);
+    // Find first occurence of s2 in s1
+    p = ft_strstr(s1, s2);
 
-   ret = ft_memcmp(str1, str2, 5);
+    // Prints the result
+    if (p) {
+        printf("String found\n");
+        printf("First occurrence of string '%s' in '%s' is '%s'", s2, s1, p);
+    } else
+        printf("String not found\n");
 
-   if(ret > 0) {
-      printf("str2 is less than str1");
-   } else if(ret < 0) {
-      printf("str1 is less than str2");
-   } else {
-      printf("str1 is equal to str2");
-   }
-
-   return(0);
+    return 0;
 }
