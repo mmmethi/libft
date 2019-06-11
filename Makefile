@@ -6,7 +6,7 @@
 #    By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/05 11:17:55 by mmmethi           #+#    #+#              #
-#    Updated: 2019/06/10 14:44:41 by mmmethi          ###   ########.fr        #
+#    Updated: 2019/06/11 09:56:58 by mmmethi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,11 @@ SRCS = ft_memset.c \
 			ft_strlcat.c \
 			ft_memalloc.c \
 			ft_memdel.c \
+			ft_strnew.c \
+			ft_strdel.c \
+			ft_strclr.c \
+			ft_striter.c \
+			ft_striteri.c \
 
 OBJCTS = ft_memset.o \
 	   		ft_bzero.o \
@@ -77,6 +82,11 @@ OBJCTS = ft_memset.o \
 			ft_strlcat.o \
 			ft_memalloc.o \
 			ft_memdel.o \
+			ft_strnew.o \
+			ft_strdel.o \
+			ft_strclr.o \
+			ft_striter.o \
+			ft_striteri.o \
 
 RM = rm -f
 
