@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/29 12:30:22 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/06/12 15:44:35 by mmmethi          ###   ########.fr       */
+/*   Created: 2019/06/12 11:09:44 by mmmethi           #+#    #+#             */
+/*   Updated: 2019/06/12 13:47:04 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
 
-void	ft_putstr(unsigned int i, char *s)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	i = 0;
-	while (s[i])
-		write(1, &s[i++], 1);
-}
+	char	*str;
+	char	index;
 
-int main()
-{	
-	char duma[] = "Mxolisi Duma\n";
-	int i;
-
-	i = 0;
-	ft_striteri(duma, ft_putstr);
-	return (0);
+	if (!s)
+		return (NULL);
+	str = ft_strnew(ft_strlen(s));
+	if (!str)
+		return (NULL);
+	index = -1;
+	while (*s + ++index)
+		*(str + index) = f(index, *(s + index));
+	return (str);
 }

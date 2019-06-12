@@ -6,7 +6,7 @@
 #    By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/05 11:17:55 by mmmethi           #+#    #+#              #
-#    Updated: 2019/06/11 09:56:58 by mmmethi          ###   ########.fr        #
+#    Updated: 2019/06/12 12:12:46 by mmmethi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,23 @@ SRCS = ft_memset.c \
 			ft_strclr.c \
 			ft_striter.c \
 			ft_striteri.c \
+			ft_strmap.c \
+			ft_strmapi.c \
+			ft_strequ.c \
+			ft_strnequ.c \
+			ft_strsub.c \
+			ft_strjoin.c \
+			ft_strtrim.c \
+			ft_strsplit.c \
+			ft_itoa.c \
+			ft_putchar.c \
+			ft_putstr.c \
+			ft_putendl.c \
+			ft_putnbr.c \
+			ft_putstr_fd.c \
+			ft_putendl_fd.c \
+			ft_putchar_fd.c \
+			ft_putnbr_fd.c \
 
 OBJCTS = ft_memset.o \
 	   		ft_bzero.o \
@@ -87,6 +104,23 @@ OBJCTS = ft_memset.o \
 			ft_strclr.o \
 			ft_striter.o \
 			ft_striteri.o \
+			ft_strmap.o \
+			ft_strmapi.o \
+			ft_strequ.o \
+			ft_strnequ.o \
+			ft_strsub.o \
+			ft_strjoin.o \
+			ft_strtrim.o \
+			ft_strsplit.o \
+			ft_itoa.o \
+			ft_putchar.o \
+			ft_putstr.o \
+			ft_putendl.o \
+			ft_putnbr.o \
+			ft_putstr_fd.o \
+			ft_putendl_fd.o \
+			ft_putchar_fd.o \
+			ft_putnbr_fd.o \
 
 RM = rm -f
 
