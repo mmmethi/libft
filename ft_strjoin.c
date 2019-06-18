@@ -6,7 +6,7 @@
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/13 13:50:05 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/06/13 14:03:46 by mmmethi          ###   ########.fr       */
+/*   Updated: 2019/06/18 20:30:01 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	s1len = ft_strlen(s1);
 	s2len = ft_strlen(s2);
 	str_new = ft_strnew(s1len + s2len);
-	if (!new_str)
+	if (!str_new)
 		return (NULL);
 	i = -1;
 	k = -1;
 	while (++i < s1len)
 		*(str_new + i) = *(s1 + i);
 	while (++k < s2len)
-		*(str_new + i++) = *(s2 + i);
+		*(str_new + i) = *(s2 + i);
 	return (str_new);
 }

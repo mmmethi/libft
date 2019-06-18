@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/13 14:06:35 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/06/18 20:31:09 by mmmethi          ###   ########.fr       */
+/*   Created: 2019/06/18 20:16:32 by mmmethi           #+#    #+#             */
+/*   Updated: 2019/06/18 20:17:52 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+void	ft_putendl(char const *s)
 {
-	char const *str;
-
-	if (s == NULL)
-		return (NULL);
-	while (*s == ' ' || *s == '\t' || *s == '\n')
-		s++;
-	if (*s == '\0')
-		return (ft_strnew(0));
-	str = s + ft_strlen(s) - 1;
-	while (*str == ' ' || *str == '\t' || *str == '\n')
-		str--;
-	return (ft_strsub(s, 0, str - s + 1));
+	ft_putendl_fd(s, 1);
 }

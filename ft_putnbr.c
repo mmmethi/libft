@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/13 14:06:35 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/06/18 20:31:09 by mmmethi          ###   ########.fr       */
+/*   Created: 2019/06/18 20:20:15 by mmmethi           #+#    #+#             */
+/*   Updated: 2019/06/18 20:21:30 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+void	ft_putnbr(int n)
 {
-	char const *str;
-
-	if (s == NULL)
-		return (NULL);
-	while (*s == ' ' || *s == '\t' || *s == '\n')
-		s++;
-	if (*s == '\0')
-		return (ft_strnew(0));
-	str = s + ft_strlen(s) - 1;
-	while (*str == ' ' || *str == '\t' || *str == '\n')
-		str--;
-	return (ft_strsub(s, 0, str - s + 1));
+	ft_putnbr_fd(n, 1);
 }

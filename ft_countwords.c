@@ -1,29 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_countwords.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/13 14:06:35 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/06/18 20:31:09 by mmmethi          ###   ########.fr       */
+/*   Created: 2019/06/18 19:44:50 by mmmethi           #+#    #+#             */
+/*   Updated: 2019/06/18 19:48:48 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+int	ft_countwords(char const *str, char c)
 {
-	char const *str;
+	int count;
+	int i;
 
-	if (s == NULL)
-		return (NULL);
-	while (*s == ' ' || *s == '\t' || *s == '\n')
-		s++;
-	if (*s == '\0')
-		return (ft_strnew(0));
-	str = s + ft_strlen(s) - 1;
-	while (*str == ' ' || *str == '\t' || *str == '\n')
-		str--;
-	return (ft_strsub(s, 0, str - s + 1));
+	i = 0;
+	count = 0;
+	while (str[i])
+	{
+		while (str[i] == c)
+			i++;
+		if (str[i] != c && str[i] != '\0')
+			count++;
+		while (str[i] != c && str[i] != '\0')
+			i++;
+	}
+	return (count);
 }

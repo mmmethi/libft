@@ -6,7 +6,7 @@
 #    By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/05 11:17:55 by mmmethi           #+#    #+#              #
-#    Updated: 2019/06/12 12:12:46 by mmmethi          ###   ########.fr        #
+#    Updated: 2019/06/18 20:06:47 by mmmethi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,6 +58,7 @@ SRCS = ft_memset.c \
 			ft_strjoin.c \
 			ft_strtrim.c \
 			ft_strsplit.c \
+			ft_countwords.c \
 			ft_itoa.c \
 			ft_putchar.c \
 			ft_putstr.c \
@@ -112,6 +113,7 @@ OBJCTS = ft_memset.o \
 			ft_strjoin.o \
 			ft_strtrim.o \
 			ft_strsplit.o \
+			ft_countwords.o \
 			ft_itoa.o \
 			ft_putchar.o \
 			ft_putstr.o \
