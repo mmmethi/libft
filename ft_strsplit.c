@@ -6,17 +6,16 @@
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:10:15 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/06/18 20:32:32 by mmmethi          ###   ########.fr       */
+/*   Updated: 2019/06/19 09:50:18 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
 static int	wordlen(char const *str, char c)
 {
-	int	i;
-	int	length;
+	int		i;
+	int		length;
 
 	i = 0;
 	length = 0;
@@ -32,9 +31,9 @@ static int	wordlen(char const *str, char c)
 
 char		**ft_strsplit(char const *s, char c)
 {
-	int	i;
-	int	j;
-	int	k;
+	int		i;
+	int		j;
+	int		k;
 	char	**str;
 
 	if (!s || !(str = (char **)malloc(sizeof(*str) *

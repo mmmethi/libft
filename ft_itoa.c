@@ -6,7 +6,7 @@
 /*   By: mmmethi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 19:57:59 by mmmethi           #+#    #+#             */
-/*   Updated: 2019/06/18 20:33:50 by mmmethi          ###   ########.fr       */
+/*   Updated: 2019/06/19 14:29:11 by mmmethi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ static size_t	str_len(int n)
 	return (i);
 }
 
-char		*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
-	char		*str;
-	size_t		len;
+	char			*str;
+	size_t			len;
 	unsigned int	i;
 
 	len = str_len(n);
